@@ -42,7 +42,7 @@ const Cart = (props) => {
 
 
          <div className='mt-10'>
-            <h1 className='ml-20 font-bold text-2xl mb-4'>Add A Break</h1>
+            <h1 className='ml-20 font-bold text-2xl mb-4'>Add a Break</h1>
 
             <div className='flex gap-5 ml-20 mr-28 p-7  rounded-3xl  bg-orange-500 justify-between'>
 
