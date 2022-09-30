@@ -30,45 +30,21 @@ const Cart = (props) => {
    return (
 
       <div>
-         {/* img      */}
 
          <div className='flex items-center  gap-3 mt-10 ml-10 '>
-            <img className='w-20 rounded-full' src="https://scontent.fdac22-1.fna.fbcdn.net/v/t39.30808-6/277572443_1325731787940448_6051411949920103477_n.jpg?stp=dst-jpg_p843x403&_nc_cat=101&ccb=1-7&_nc_sid=174925&_nc_ohc=250n8Zhh9AgAX8CtvBq&_nc_ht=scontent.fdac22-1.fna&oh=00_AT_qYXY2EvH9f3rDtD-riAHpnJ1mDZrL_7RuHDpptYInpw&oe=633B1411" alt="" srcset="" />
+            <img className='w-20 rounded-full' src="http://www.jhankarmahbub.com/images/jhankar.jpg" alt="" srcset="" />
 
-            <h2 className='font-bold text-3xl'>Mamun <p className='text-sm'>Country: Bangladesh </p></h2>
+            <h2 className='font-bold text-3xl'>Mamun <p className='text-sm'> Bangladesh </p></h2>
          </div>
 
 
-         {/* img      */}
 
-         {/* details  */}
 
-         <div className='flex gap-10 ml-20 mt-10   rounded-3xl '>
-            <div>
-               <h2 className='font-bold text-3xl'>58<span className='text-sm'>kg</span> <p className='text-sm'>Weight </p></h2>
-            </div>
-            <div>
-               <h2 className='font-bold text-3xl'>5.7<p className='text-sm'>Height </p></h2>
-            </div>
-            <div>
-               <h2 className='font-bold text-3xl'>21<span className='text-sm'>yrs</span> <p className='text-sm'>Age </p></h2>
-            </div>
-         </div>
-         {/* details  */}
-
-         {/* select  */}
-         <div className='mt-10 flex gap-5  ml-20 mr-40 p-5 rounded-3xl bg-slate-500 justify-between'>
-            <h1 className=''>Select Exerise</h1>
-            <h1>{cart.length}</h1>
-         </div>
-         {/* select  */}
-
-         {/* btn  */}
 
          <div className='mt-10'>
             <h1 className='ml-20 font-bold text-2xl mb-4'>Add A Break</h1>
 
-            <div className='flex gap-5 ml-20 mr-28 p-7  rounded-3xl  bg-slate-500 justify-between'>
+            <div className='flex gap-5 ml-20 mr-28 p-7  rounded-3xl  bg-orange-500 justify-between'>
 
                <button onClick={brackHandel} value="10" className="btn btn-accent rounded-full w-2 h-1">10</button>
                <button onClick={brackHandel} value="20" className="btn btn-accent rounded-full w-2 h-1">20</button>
@@ -78,37 +54,36 @@ const Cart = (props) => {
 
             </div>
          </div>
-         {/* btn  */}
 
 
-         {/* exercise time  */}
+
+
 
          <div className=''>
-            <h1 className='ml-20 font-bold text-2xl mt-6 mb-1'>Exerise Details</h1>
-            <div className='flex gap-5 justify-between mt-10  ml-20 mr-40 p-5 rounded-3xl  bg-slate-500'>
-               <h1 className=''>Exercise Time</h1>
+            <h1 className='ml-20 font-bold text-2xl mt-6 mb-1'>Courses Details</h1>
+            <div className='flex gap-5 justify-between mt-10  ml-20 mr-40 p-5 rounded-3xl  bg-orange-500'>
+               <h1 className='text-white'>Course Time</h1>
                <div className='flex gap-1'>
-                  <h1>{total} </h1>
-                  <p>min</p>
+                  <h1 className='text-white'>{total} </h1>
+                  <p className='text-white'>min</p>
                </div>
             </div>
          </div>
-         {/* exercise time  */}
 
 
-         {/* brack time  */}
-         <div className='mt-10 flex gap-5 justify-between  ml-20 mr-40 p-5 rounded-3xl bg-slate-500'>
-            <h1 className=''>Break Time</h1>
+
+         <div className='mt-10 flex gap-5 justify-between  ml-20 mr-40 p-5 rounded-3xl bg-orange-500'>
+            <h1 className='text-white'>Break Time</h1>
             <div className='flex gap-1'>
-               <h1>{brackTime} </h1>
-               <p>min</p>
+               <h1 className='text-white'>{brackTime} </h1>
+               <p className='text-white'>min</p>
             </div>
          </div>
-         {/* brack time  */}
 
-         {/* btn  */}
+
+
          <div className='ml-32 mt-10'>
-            <button onClick={notify} className="btn btn-active btn-primary">Activity Completed</button>
+            <button onClick={notify} className="btn btn-active btn-primary">Course Completed</button>
             <ToastContainer
                position="top-center"
                autoClose={5000}
@@ -123,7 +98,7 @@ const Cart = (props) => {
 
 
          </div>
-         {/* btn  */}
+
 
       </div>
 

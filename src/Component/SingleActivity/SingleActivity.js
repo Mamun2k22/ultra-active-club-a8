@@ -15,7 +15,7 @@ const SingleActivity = (props) => {
                         Name: {name}
                     </h2>
                     <h4 className='font-bold'>Time: {time} min </h4>
-                    <button onClick={() => addToList(gym)} className="btn btn-active btn-primary ">Add to list</button>
+                    <button onClick={() => addToList(gym)} className="btn btn-active btn-primary ">Add to Course</button>
                 </div>
             </div>
         </div>

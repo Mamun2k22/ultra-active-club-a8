@@ -3,8 +3,8 @@ import React from 'react';
 const Questions = () => {
     return (
         <div>
-            <div className='mt-20'>
-                <div>
+            <div className='mt-20 bg-primary p-5'>
+                <div className='text-white'>
                     <h1 className='text-center font-extrabold text-4xl mb-5'>Question: How Dose React Work</h1>
                     <h1 className='ml-10 mr-10 text-2xl mb-10'><span className='font-bold'>Answe</span>: React is a declarative, efficient, and flexible JavaScript library for building user interfaces. 'V' denotes the view in MVC. ReactJS is an open-source, component-based front end library responsible only for the view layer of the application.</h1>
 
