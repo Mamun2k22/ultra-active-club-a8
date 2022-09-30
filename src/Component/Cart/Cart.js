@@ -34,7 +34,7 @@ const Cart = (props) => {
          <div className='flex items-center  gap-3 mt-10 ml-10 '>
             <img className='w-20 rounded-full' src="http://www.jhankarmahbub.com/images/jhankar.jpg" alt="" srcset="" />
 
-            <h2 className='font-bold text-3xl'>Mamun <p className='text-sm'> Bangladesh </p></h2>
+            <h2 className='font-bold text-3xl'>Mamun Khan <p className='text-sm'> Bangladesh </p></h2>
          </div>
 
 
