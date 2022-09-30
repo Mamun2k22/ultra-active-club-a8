@@ -1,6 +1,11 @@
 import React from 'react';
+import { useState } from 'react';
 
 const Cart = (props) => {
+
+
+   const [brackTime, setBrackTime] = useState(0);
+
    const { cart } = props;
    let total = 0;
 
@@ -8,7 +13,10 @@ const Cart = (props) => {
       total = total + gym.time;
    }
 
-
+   const brackHandel = (e) => {
+      const val = e.currentTarget.value;
+      setBrackTime(val)
+   }
 
    return (
 
@@ -53,11 +61,11 @@ const Cart = (props) => {
 
             <div className='flex gap-5 ml-20 mr-28 p-7  rounded-3xl  bg-slate-500 justify-between'>
 
-               <button className="btn btn-accent rounded-full w-2 h-1">10</button>
-               <button className="btn btn-accent rounded-full w-2 h-1">20</button>
-               <button className="btn btn-accent rounded-full w-2 h-1">30</button>
-               <button className="btn btn-accent rounded-full w-2 h-1">40</button>
-               <button className="btn btn-accent rounded-full w-2 h-1">50</button>
+               <button onClick={brackHandel} value="10" className="btn btn-accent rounded-full w-2 h-1">10</button>
+               <button onClick={brackHandel} value="20" className="btn btn-accent rounded-full w-2 h-1">20</button>
+               <button onClick={brackHandel} value="30" className="btn btn-accent rounded-full w-2 h-1">30</button>
+               <button onClick={brackHandel} value="40" className="btn btn-accent rounded-full w-2 h-1">40</button>
+
 
             </div>
          </div>
@@ -83,7 +91,7 @@ const Cart = (props) => {
          <div className='mt-10 flex gap-5 justify-between  ml-20 mr-40 p-5 rounded-3xl bg-slate-500'>
             <h1 className=''>Break Time</h1>
             <div className='flex gap-1'>
-               <h1>{ } </h1>
+               <h1>{brackTime} </h1>
                <p>seconds</p>
             </div>
          </div>
