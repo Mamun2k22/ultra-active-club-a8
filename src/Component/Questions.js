@@ -5,13 +5,13 @@ const Questions = () => {
         <div>
             <div className='mt-20 bg-primary p-5'>
                 <div className='text-white'>
-                    <h1 className='text-center font-extrabold text-4xl mb-5'>Question: How Dose React Work</h1>
+                    <h1 className='text-center font-extrabold text-4xl mb-5'>Question: How Dose React Work?</h1>
                     <h1 className='ml-10 mr-10 text-2xl mb-10'><span className='font-bold'>Answer</span>: React is a declarative, efficient, and flexible JavaScript library for building user interfaces. 'V' denotes the view in MVC. ReactJS is an open-source, component-based front end library responsible only for the view layer of the application.</h1>
 
 
 
 
-                    <h1 className='text-center font-extrabold text-4xl mb-5'>Question:Props And State Different</h1>
+                    <h1 className='text-center font-extrabold text-4xl mb-5'>Question:Props And State Different?</h1>
                     <h1 className='ml-10 mr-10 text-2xl mb-10'><span className='font-bold'>Answer</span>: Simply put, State is the local state of the component which cannot be accessed and modified outside of the component. It's equivalent to local variables in a function. Props, on the other hand, make components reusable by giving components the ability to receive data from their parent component in the form of props.</h1>
 
                     <h1 className='text-center font-extrabold text-4xl mb-10'>Question: What else is useEffect Paste used for other than loading data from API? </h1>
