@@ -1,8 +1,17 @@
 import React from 'react';
 import { useState } from 'react';
 
+
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
+
+
 const Cart = (props) => {
 
+   const notify = () => toast("Completed.");
 
    const [brackTime, setBrackTime] = useState(0);
 
@@ -80,7 +89,7 @@ const Cart = (props) => {
                <h1 className=''>Exercise Time</h1>
                <div className='flex gap-1'>
                   <h1>{total} </h1>
-                  <p>seconds</p>
+                  <p>min</p>
                </div>
             </div>
          </div>
@@ -92,14 +101,26 @@ const Cart = (props) => {
             <h1 className=''>Break Time</h1>
             <div className='flex gap-1'>
                <h1>{brackTime} </h1>
-               <p>seconds</p>
+               <p>min</p>
             </div>
          </div>
          {/* brack time  */}
 
          {/* btn  */}
          <div className='ml-32 mt-10'>
-            <button className="btn btn-active btn-primary">Activity Completed</button>
+            <button onClick={notify} className="btn btn-active btn-primary">Activity Completed</button>
+            <ToastContainer
+               position="top-center"
+               autoClose={5000}
+               hideProgressBar={false}
+               newestOnTop={false}
+               closeOnClick
+               rtl={false}
+               pauseOnFocusLoss
+               draggable
+               pauseOnHover
+            />
+
 
          </div>
          {/* btn  */}

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Cart from '../Cart/Cart';
 import Gym from '../Gym/Gym';
 import Nav from '../Nav/Nav';
+import Questions from '../Questions';
 
 const Home = () => {
 
@@ -45,7 +46,7 @@ const Home = () => {
 
 
 
-
+            <Questions></Questions>
 
 
         </div>
