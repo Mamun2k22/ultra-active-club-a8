@@ -60,7 +60,7 @@ const Cart = (props) => {
 
 
          <div className=''>
-            <h1 className='ml-20 font-bold text-2xl mt-6 mb-1'>Courses Details</h1>
+            <h1 className='ml-20 font-bold text-2xl mt-6 mb-1'>Courses Module</h1>
             <div className='flex gap-5 justify-between mt-10  ml-20 mr-40 p-5 rounded-3xl  bg-orange-500'>
                <h1 className='text-white'>Course Time</h1>
                <div className='flex gap-1'>
